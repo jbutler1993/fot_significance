@@ -1,24 +1,37 @@
+### Setup
+
 ### Load Excel ###
 
 library(readxl)
 library(dplyr)
 library(tibble)
+library(data.table)
 
 responses <-  read_excel("C:/Users/m1012129/Downloads/responses.xlsx")
 
-# Creating the table
-significance <- tibble(
+times <- c("April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019")
+
+## Creating the table
+significance <- data.frame(
   question = character(), # Column 'question' as text
   answer = character(),  # Column 'answer' as text
-  time1 = character(),   # Column 'time1' as text
-  time2 = character(),   # Column 'time2' as text
+  timeone = character(),   # Column 'time1' as text
+  timetwo = character(),   # Column 'time2' as text
   pvalue = double()     # Column 'pvalue' as a decimal
 )
 
-### find the latest data ###
+### Function for z-test
 
-time1 = "April 2023"
-time2 = "April 2022"
+fot_significance <- function(timeinput1, questioninput, answerinput) {
+
+### Input the function variables ###
+
+time1 <- "April 2023" # The lastest interation of the survey
+time2 <- timeinput1 # The iteration being compared to
+answer1 <- answerinput # The specific answer
+question1 <- questioninput # The specific Survey Question
+  
+### Data ###
 
 latest <- responses %>%
   filter(time == time1)
@@ -26,19 +39,11 @@ latest <- responses %>%
 previous <- responses %>%
   filter(time == time2)
 
-answer1 = "Yes, I fully understand Defra's vision for farming"
-question1 = "Do you know what Defra's vision means for farming?"
-  
-### Data ###
-  
 latest_question <- latest %>%
   filter(answer == answer1) # create a table of the latest time
 
 previous_question <- previous %>%
   filter(answer == answer1) # create a table of the latest time
-
-time_values <- unique(responses$time) # find all unique time names
-
 
 # Group 1
 n1 <- latest_question$total # Sample size for group 1
@@ -73,20 +78,42 @@ alpha <- 0.05
 # Step 6: Find the critical value for the test statistic
 critical_value <- qnorm(1 - alpha / 2)
 
-### Results ###
+# Step 7: Print the variables
 
-# Step 7: Compare the test statistic with the critical value
-if (abs(z) > critical_value) {
-  cat("Reject the null hypothesis. There is a significant difference between the proportions.\n")
-} else {
-  cat("Fail to reject the null hypothesis. There is no significant difference between the proportions.\n")
-}
+print(question1)
+print(answer1)
+print(time1)
+print(time2)
 
 # Step 8: Calculate the p-value
 p_value <- 2 * (1 - pnorm(abs(z)))
 cat("The p-value is:", p_value, "\n")
 
-# Step 9: Add to the table
+# Step 9: Compare the test statistic with the critical value
+if (abs(z) > critical_value) {
+  cat("Reject the null hypothesis. There is a significant difference between the proportions.\n")} 
+else {
+  cat("Fail to reject the null hypothesis. There is no significant difference between the proportions.\n")}
 
-significance <- significance %>%
-  add_row(question = question1, answer = answer1, time1 = time1, time2 = time2, pvalue = p_value)
+function_df <- data.frame(question = question1, answer = answer1, timeone = time1, timetwo = time2, pvalue = p_value)
+
+significance <<- rbind(significance, function_df)
+
+}
+
+
+### Running of Answers
+
+## Do you know what Defra's vision means for farming?
+
+for (time in times) {
+  fot_significance(time, "Do you know what Defra's vision means for farming?", "Yes, I fully understand Defra's vision for farming")}
+
+for (time in times) {
+  fot_significance(time, "Do you know what Defra's vision means for farming?", "Yes, I know roughly")}
+
+for (time in times) {
+  fot_significance(time, "Do you know what Defra's vision means for farming?", "No, I don't know, but would be interested to know more")}
+
+for (time in times) {
+  fot_significance(time, "Do you know what Defra's vision means for farming?", "No, I don't need to know")}
