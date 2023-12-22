@@ -108,7 +108,9 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
 
 ### Running of Answers
 
-## Do you know what Defra's vision means for farming?
+## Vision
+
+# Do you know what Defra's vision means for farming?
 
 for (time in times) {
   fot_significance(time, "Do you know what Defra's vision means for farming?", "Yes, I fully understand Defra's vision for farming")}
@@ -121,3 +123,93 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "Do you know what Defra's vision means for farming?", "No, I don't need to know")}
+
+## Changes
+
+# Do you have the information you need at this point to inform your business planning? 
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I have all the information I need")}
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I have most of the information I need")}
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I do not have any information but know where to find")}
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I do not have any information and I don't know where to find it")}
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I don't know")}
+
+# Do you feel you will need to make changes to your business in the next 3-5 years?
+
+for (time in times) {
+  fot_significance(time, "Do you feel you will need to make changes to your business in the next 3-5 years?", "I am making changes to my business")}
+
+for (time in times) {
+  fot_significance(time, "Do you feel you will need to make changes to your business in the next 3-5 years?", "I will need to make changes to my business")}
+
+for (time in times) {
+  fot_significance(time, "Do you feel you will need to make changes to your business in the next 3-5 years?", "I don't need to change my business")}
+
+for (time in times) {
+  fot_significance(time, "Do you feel you will need to make changes to your business in the next 3-5 years?", "I don't know what changes I need to make")}
+
+# What changes do you think you will need to make?
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Stay farming and grow the business")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Stay farming but reduce the size of the business")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Stay farming but diversify business into non-farming areas")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Stay farming but increase productivity")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Stay farming but change core agricultural enterprises (for example, change crops and/or livestock)")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Leave farming (planned retirement or pass onto next generation)")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Leave farming (exit for other reasons)")}
+
+for (time in times) {
+  fot_significance(time, "What changes do you think you will need to make?", "Other")}
+
+# Have any of the following factors led to you make changes on your farm?
+
+for (time in times) {
+  fot_significance(time, "Have any of the following factors led to you make changes on your farm?", "Input price changes")}
+
+for (time in times) {
+  fot_significance(time, "Have any of the following factors led to you make changes on your farm?", "Output price changes")}
+
+for (time in times) {
+  fot_significance(time, "Have any of the following factors led to you make changes on your farm?", "Food security and supply")}
+
+for (time in times) {
+  fot_significance(time, "Have any of the following factors led to you make changes on your farm?", "Trade agreements with other countries")}
+
+for (time in times) {
+  fot_significance(time, "Have any of the following factors led to you make changes on your farm?", "Weather / climate change")}
+
+# How confident are you that you can respond to any changes needed?
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you can respond to any changes needed?", "Very confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you can respond to any changes needed?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you can respond to any changes needed?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you can respond to any changes needed?", "I don't know")}
