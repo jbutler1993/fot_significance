@@ -1,12 +1,14 @@
 ### Setup
 
 install.packages("readxl")
+install.packages("writexl")
 install.packages("dplyr")
 install.packages("data.table")
 
 ### Load Excel ###
 
 library(readxl)
+library(writexl)
 library(dplyr)
 library(tibble)
 library(data.table)
@@ -412,3 +414,7 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "I don't know")}
+
+### Export output
+
+write_xlsx(significance, path = "significance.xlsx")
