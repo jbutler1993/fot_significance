@@ -13,7 +13,7 @@ library(data.table)
 
 responses <-  read_excel("C:/Users/jb000299/Downloads/responses.xlsx")
 
-times <- c("April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019")
+times <- c("October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019")
 
 ## Creating the table
 significance <- data.frame(
@@ -91,13 +91,12 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   
   # Step 8: Calculate the p-value
   p_value <- 2 * (1 - pnorm(abs(z)))
-  cat("The p-value is:", p_value, "\n")
   
-  # Step 9: Compare the test statistic with the critical value
-  if (abs(z) > critical_value) {
-    cat("Reject the null hypothesis. There is a significant difference between the proportions.\n")} 
-  else {
-    cat("Fail to reject the null hypothesis. There is no significant difference between the proportions.\n")}
+  if (length(p_value) > 1) {
+    p_value <- max(p_value)
+  }
+  
+  cat("The p-value is:", p_value, "\n")
   
   function_df <- data.frame(question = question1, answer = answer1, timeone = time1, timetwo = time2, pvalue = p_value)
   
