@@ -340,3 +340,75 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?", "I don't need to know")}
+
+## Relationships
+
+# How confident are you that changes to schemes and regulations will lead to a successful future for farming? 
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Very confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "I don't know")}
+
+# How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Very confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "I don't know")}
+
+# As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?
+
+for (time in times) {
+  fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Very confident")}
+
+for (time in times) {
+  fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "I don't know")}
+
+# Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?
+
+for (time in times) {
+  fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Very positive")}
+
+for (time in times) {
+  fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Somewhat positive")}
+
+for (time in times) {
+  fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Not at all positive")}
+
+for (time in times) {
+  fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "I don't know")}
+
+# Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?
+
+for (time in times) {
+  fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Very positive")}
+
+for (time in times) {
+  fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Somewhat positive")}
+
+for (time in times) {
+  fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Not at all positive")}
+
+for (time in times) {
+  fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "I don't know")}
