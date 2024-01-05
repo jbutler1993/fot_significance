@@ -212,3 +212,131 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "How confident are you that you can respond to any changes needed?", "I don't know")}
+
+## Groups
+
+# To what extent do you agree that farming organisations and advisors are helping you make these changes?
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Strongly agree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Agree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Neither agree nor disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Strongly disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Not applicable")}
+
+# How important is producing for the end market for your business currently?
+
+for (time in times) {
+  fot_significance(time, "How important is producing for the end market for your business currently?", "Very important")}
+
+for (time in times) {
+  fot_significance(time, "How important is producing for the end market for your business currently?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important is producing for the end market for your business currently?", "Not at all important")}
+
+for (time in times) {
+  fot_significance(time, "How important is producing for the end market for your business currently?", "I don't know")}
+
+# How important will producing for the end market be for your business in the future?
+
+for (time in times) {
+  fot_significance(time, "How important will producing for the end market be for your business in the future?", "Very important")}
+
+for (time in times) {
+  fot_significance(time, "How important will producing for the end market be for your business in the future?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important will producing for the end market be for your business in the future?", "Not at all important")}
+
+for (time in times) {
+  fot_significance(time, "How important will producing for the end market be for your business in the future?", "I don't know")}
+
+## Environment
+
+# How important is it for your business that Defra pays for environmental outcomes currently?
+
+for (time in times) {
+  fot_significance(time, "How important is it for your business that Defra pays for environmental outcomes currently?", "Very important")}
+
+for (time in times) {
+  fot_significance(time, "How important is it for your business that Defra pays for environmental outcomes currently?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important is it for your business that Defra pays for environmental outcomes currently?", "Not at all important")}
+
+for (time in times) {
+  fot_significance(time, "How important is it for your business that Defra pays for environmental outcomes currently?", "I don't know")}
+
+# How important will it be for your business that Defra pays for environmental outcomes in the future?
+
+for (time in times) {
+  fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Very important")}
+
+for (time in times) {
+  fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Not at all important")}
+
+for (time in times) {
+  fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "I don't know")}
+
+# To what extent do you agree that the current approach balances enforcement with individual responsibility?
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Strongly agree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Agree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Neither agree nor disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Strongly disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Not applicable")}
+
+# How confident are you that you understand which regulations apply to your farm?
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Very confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "I don't know")}
+
+# Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?
+
+for (time in times) {
+  fot_significance(time, "Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?", "I fully understand the purpose")}
+
+for (time in times) {
+  fot_significance(time, "Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?", "I roughly understand the purpose")}
+
+for (time in times) {
+  fot_significance(time, "Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?", "I don’t understand but want to know")}
+
+for (time in times) {
+  fot_significance(time, "Thinking of the regulations that apply to your farm (outside the rules associated with any payment schemes), to what extent do you understand their purpose?", "I don't need to know")}
