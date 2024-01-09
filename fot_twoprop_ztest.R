@@ -99,8 +99,9 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   }
   
   cat("The p-value is:", p_value, "\n")
-
+  
   # Step 9: Add to the table
+  
   function_df <- data.frame(question = question1, answer = answer1, timeone = time1, timetwo = time2, pvalue = p_value)
   
   significance <<- rbind(significance, function_df)
@@ -137,10 +138,16 @@ for (time in times) {
   fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I have most of the information I need")}
 
 for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "Most or all information")}
+
+for (time in times) {
   fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I do not have any information but know where to find")}
 
 for (time in times) {
   fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I do not have any information and I don't know where to find it")}
+
+for (time in times) {
+  fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I do not have any information (either)")}
 
 for (time in times) {
   fot_significance(time, "Do you have the information you need at this point to inform your business planning?", "I don't know")}
@@ -211,6 +218,9 @@ for (time in times) {
   fot_significance(time, "How confident are you that you can respond to any changes needed?", "Somewhat confident")}
 
 for (time in times) {
+  fot_significance(time, "How confident are you that you can respond to any changes needed?", "Confident (either)")}
+
+for (time in times) {
   fot_significance(time, "How confident are you that you can respond to any changes needed?", "Not at all confident")}
 
 for (time in times) {
@@ -227,6 +237,9 @@ for (time in times) {
   fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Agree")}
 
 for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Agree (either)")}
+
+for (time in times) {
   fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Neither agree nor disagree")}
 
 for (time in times) {
@@ -234,6 +247,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Strongly disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Disagree (either)")}
 
 for (time in times) {
   fot_significance(time, "To what extent do you agree that farming organisations and advisors are helping you make these changes?", "Not applicable")}
@@ -245,6 +261,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "How important is producing for the end market for your business currently?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important is producing for the end market for your business currently?", "Very or moderately important")}
 
 for (time in times) {
   fot_significance(time, "How important is producing for the end market for your business currently?", "Not at all important")}
@@ -259,6 +278,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "How important will producing for the end market be for your business in the future?", "Moderately important")}
+
+for (time in times) {
+  fot_significance(time, "How important will producing for the end market be for your business in the future?", "Very or moderately important")}
 
 for (time in times) {
   fot_significance(time, "How important will producing for the end market be for your business in the future?", "Not at all important")}
@@ -291,6 +313,9 @@ for (time in times) {
   fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Moderately important")}
 
 for (time in times) {
+  fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Very or moderately important")}
+
+for (time in times) {
   fot_significance(time, "How important will it be for your business that Defra pays for environmental outcomes in the future?", "Not at all important")}
 
 for (time in times) {
@@ -305,6 +330,9 @@ for (time in times) {
   fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Agree")}
 
 for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Agree (either)")}
+
+for (time in times) {
   fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Neither agree nor disagree")}
 
 for (time in times) {
@@ -312,6 +340,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Strongly disagree")}
+
+for (time in times) {
+  fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Disagree (either)")}
 
 for (time in times) {
   fot_significance(time, "To what extent do you agree that the current approach balances enforcement with individual responsibility?", "Not applicable")}
@@ -323,6 +354,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Confident (either)")}
 
 for (time in times) {
   fot_significance(time, "How confident are you that you understand which regulations apply to your farm?", "Not at all confident")}
@@ -355,6 +389,9 @@ for (time in times) {
   fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Somewhat confident")}
 
 for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Confident (either)")}
+
+for (time in times) {
   fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Not at all confident")}
 
 for (time in times) {
@@ -367,6 +404,10 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Somewhat confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Confident (either)")}
+
 
 for (time in times) {
   fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Not at all confident")}
@@ -383,6 +424,9 @@ for (time in times) {
   fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Somewhat confident")}
 
 for (time in times) {
+  fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Confident (either)")}
+
+for (time in times) {
   fot_significance(time, "As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?", "Not at all confident")}
 
 for (time in times) {
@@ -395,6 +439,9 @@ for (time in times) {
 
 for (time in times) {
   fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Somewhat positive")}
+
+for (time in times) {
+  fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Positive")}
 
 for (time in times) {
   fot_significance(time, "Taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about the future of farming?", "Not at all positive")}
@@ -411,6 +458,9 @@ for (time in times) {
   fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Somewhat positive")}
 
 for (time in times) {
+  fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Positive")}
+
+for (time in times) {
   fot_significance(time, "Personally, taking into account the changes to existing payments / regulations and new schemes that will be available, how do you feel about your future in farming?", "Not at all positive")}
 
 for (time in times) {
@@ -418,4 +468,4 @@ for (time in times) {
 
 ### Export output
 
-write_xlsx(significance, path = "significance.xlsx")
+write_xlsx(significance, path = "signifiance.xlsx")
