@@ -99,7 +99,8 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   }
   
   cat("The p-value is:", p_value, "\n")
-  
+
+  # Step 9: Add to the table
   function_df <- data.frame(question = question1, answer = answer1, timeone = time1, timetwo = time2, pvalue = p_value)
   
   significance <<- rbind(significance, function_df)
