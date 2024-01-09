@@ -468,4 +468,4 @@ for (time in times) {
 
 ### Export output
 
-write_xlsx(significance, path = "signifiance.xlsx")
+write_xlsx(significance, path = "significance.xlsx")
