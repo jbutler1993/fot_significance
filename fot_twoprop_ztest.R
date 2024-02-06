@@ -13,9 +13,9 @@ library(dplyr)
 library(tibble)
 library(data.table)
 
-responses <-  read_excel("C:/Users/jb000299/Downloads/responses.xlsx")
+responses <-  read_excel("C:/Users/jb000299/Downloads/responses.xlsx") # 'responses' excel
 
-times <- c("October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019")
+times <- c("October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019") # Needs to be all iterations except the latest
 
 ## Creating the table
 significance <- data.frame(
@@ -40,7 +40,7 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   ### Data ###
   
   latest <- responses %>%
-    filter(time == time1)
+    filter(time == time1) 
   
   previous <- responses %>%
     filter(time == time2)
