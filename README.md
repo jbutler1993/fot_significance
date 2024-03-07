@@ -18,7 +18,14 @@ The release of the Farmer Opinion Tracker can be found at: https://www.gov.uk/go
 
 ## Setup
 
-The _responses_ spreadsheet will have to be downloaded and updated with the latest responses. 
+The _responses_ spreadsheet will have to be downloaded and updated with the latest responses. This is a manual process of adding a new set of rows to each section and adding in the latest responses to each answer of each question from the latest timeseries once it is received from Farming Statistics (published examples can be found at https://www.gov.uk/government/statistical-data-sets/farmer-opinion-tracker-for-england). This can take up to thirty minutes.
+
+If any new questions need to be added, this can be done at the bottom of the list. 
+
+> [!WARNING]
+> All iterations must be present in every question, since R does not understand if listed times are absent when reading from the spreadsheet. If an iteration predates a question, simply enter a zero and ignore them in the output.
+
+Update the filepath within the code to point at the file.
 ```
 responses <-  read_excel("C:/Users/xxxxxxxx/Downloads/responses.xlsx")
 ```
