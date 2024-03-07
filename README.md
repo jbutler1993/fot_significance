@@ -20,6 +20,9 @@ A two-proportion z-test assesses if proportions from two groups significantly di
 
 The _responses_ spreadsheet will have to be downloaded and updated with the latest responses. This is a manual process of adding a new set of rows to each section and adding in the latest responses to each answer of each question from the latest [timeseries](https://www.gov.uk/government/statistical-data-sets/farmer-opinion-tracker-for-england) once it is received from Farming Statistics. This can take up to thirty minutes.
 
+> [!IMPORTANT]
+> Some answers are created by combining others. For instance, 'somewhat positive' and 'very positive' will be combined to 'positive' in order to created a bigger sample and a more general view of the sentiment.
+
 If any new questions need to be added, this can be done at the bottom of the list. 
 
 > [!WARNING]
@@ -51,7 +54,7 @@ for (time in times) {
 
 Folllowing setup, the process should simply be a case of hitting 'Run'.
 
-The process:
+The process in a nutshell:
 
 - Create the base table for output
 - Create function for Z-Test
@@ -64,6 +67,8 @@ The process:
 - Export table   
 
 ## Export
+The process will export a .xlsx to your working directory. This will contain the results of every z-test that has been run including the question, answer, times and p-values. Filter down to the rows where p<0.05 to find the statistically significant results.
+
 Replace the spreadsheet
 
 ## Contact
