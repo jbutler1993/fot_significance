@@ -2,12 +2,12 @@
 > The last version of the Farmer Opinion Tracker run through the significance process was October 2023.
 
 ## Roadmap
-- [] Download the latest version of Farmer Opinion Tracker results
-- [] Update the response rates in the 'responses' spreadsheet
-- [] Change the primary time within the Z-Test process
-- [] Add the last iteration to the _times_ list
-- [] Verify that no new questions need to be added
-- [] Run the process
+- [ ] Download the latest version of Farmer Opinion Tracker results
+- [ ] Update the response rates in the 'responses' spreadsheet
+- [ ] Change the primary time within the Z-Test process
+- [ ] Add the last iteration to the _times_ list
+- [ ] Verify that no new questions need to be added
+- [ ] Run the process
 
 ## Background
 
