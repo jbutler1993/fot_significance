@@ -49,6 +49,20 @@ for (time in times) {
 
 ## Running the process
 
+Folllowing setup, the process should simply be a case of hitting 'Run'.
+
+The process:
+
+- Create the base table for output
+- Create function for Z-Test
+  - Load in time of latest iteration
+- Run questions through function
+  - Load question
+  - Load answer
+  - Compare latest iteration to all previous iterations
+  - Write results in table
+- Export table   
+
 ## Export
 Replace the spreadsheet
 
