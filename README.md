@@ -22,3 +22,7 @@ A two-proportion z-test assesses if proportions from two groups significantly di
 ## Running the process
 
 ## Export
+
+## Contact
+
+Joe Butler - joseph.butler@defra.gov.uk
