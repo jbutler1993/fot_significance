@@ -46,9 +46,11 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
     filter(time == time2)
   
   latest_question <- latest %>%
+    filter(question == question1) %>%
     filter(answer == answer1) # create a table of the latest time
   
   previous_question <- previous %>%
+    filter(question == question1) %>%
     filter(answer == answer1) # create a table of the latest time
   
   # Group 1
