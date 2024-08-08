@@ -400,20 +400,19 @@ for (time in times) {
 # How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?
 
 for (time in times) {
-  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Very confident")}
+  fot_significance(time, "How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?", "Very confident")}
 
 for (time in times) {
-  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Somewhat confident")}
+  fot_significance(time, "How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?", "Somewhat confident")}
 
 for (time in times) {
-  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Confident (either)")}
-
-
-for (time in times) {
-  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "Not at all confident")}
+  fot_significance(time, "How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?", "Confident (either)")}
 
 for (time in times) {
-  fot_significance(time, "How confident are you that changes to schemes and regulations will lead to a successful future for farming?", "I don't know")}
+  fot_significance(time, "How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?", "Not at all confident")}
+
+for (time in times) {
+  fot_significance(time, "How confident are you in Defra and Defra agency's ability to deliver changes to schemes and regulations?", "I don't know")}
 
 # As part of delivering the changes, to what extent do you feel confident that your own relationship with Defra and Defra agencies, such as the Rural Payments Agency and Natural England, will develop positively in the future?
 
