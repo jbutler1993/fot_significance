@@ -1,10 +1,3 @@
-### Setup
-
-install.packages("readxl")
-install.packages("writexl")
-install.packages("dplyr")
-install.packages("data.table")
-
 ### Load Excel ###
 
 library(readxl)
@@ -13,9 +6,9 @@ library(dplyr)
 library(tibble)
 library(data.table)
 
-responses <-  read_excel("C:/Users/ab000414/OneDrive - Defra/Documents/R Scripts/responses.xlsx") # 'responses' excel
+responses <-  read_excel("C:/Users/jb000299/Downloads/FOT_responses_Oct24.xlsx") # 'responses' excel
 
-times <- c("October 2023", "April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019") # Needs to be all iterations except the latest
+times <- c("April 2024", "October 2023", "April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019") # Needs to be all iterations except the latest
 
 ## Creating the table
 significance <- data.frame(
@@ -32,7 +25,7 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   
   ### Input the function variables ###
   
-  time1 <- "April 2024" # The latest iteration of the survey
+  time1 <- "October 2024" # The latest iteration of the survey
   time2 <- timeinput1 # The iteration being compared to
   answer1 <- answerinput # The specific answer
   question1 <- questioninput # The specific Survey Question
@@ -63,7 +56,7 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   
   # Performing the two-proportion z-test
   # H0: p1 = p2 (the proportions are equal)
-  # H1: p1 ≠ p2 (the proportions are not equal)
+  # H1: p1 b	  p2 (the proportions are not equal)
   
   ### Manipulation ###
   
@@ -472,67 +465,67 @@ for (time in times) {
 # In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an AES agreement already and am not planning any changes.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an agri-environment scheme agreement already and am not planning any changes")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an AES agreement already and am planning to do more e.g. more options, more land.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an agri-environment scheme agreement already and am planning to do more e.g. more options, more land")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an AES agreement already and am planning to do another scheme alongside.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an agri-environment scheme agreement already and am planning to do another scheme alongside")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an AES agreement already and am planning to replace it with another scheme.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an agri-environment scheme agreement already and am planning to replace it with another scheme")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an AES agreement already but will not be renewing.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I have an agri-environment scheme agreement already but will not be renewing")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I do not have an agri-environment scheme agreement already but planning to do one.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I don’t have an agri-environment scheme agreement already but planning to do one")}
 
 for (time in times) {
-  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I do not have an agri-environment scheme agreement already and not planning to do one.")}
+  fot_significance(time, "In the next year, do you plan on making changes to any agri-environment schemes / agreements you have for your farm?", "I don’t have an agri-environment scheme agreement already  and not planning to do one")}
 
 # Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that will benefit my farm’s environment.")}
+  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that will benefit my farm's environment")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that will fit easily into the way the business is run.")}
+  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that will fit easily into the way the business is run")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are attractive financially.")}
+  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are attractive financially")}
 
 for (time in times) {
   fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are easy to apply for")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are flexible to my needs.")}
+  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are flexible to my needs")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are needed as I have significantly changed the business e.g. bought more land.")}
+  fot_significance(time, "Have any of the following issues led to you planning any of those changes to agri-environment schemes / agreements for the next year on your farm?", "New scheme or scheme options that are needed as I have significantly changed the business e.g. bought more land")}
 
 # Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes will not benefit my farm’s environment.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes will not benefit my farm's environment")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes will not fit easily into the way the business is run.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes will not fit easily into the way the business is run")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not attractive financially.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not attractive financially")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not easy to apply for.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not easy to apply for")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not flexible to my needs.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not flexible to my needs")}
 
 for (time in times) {
-  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not an option as I plan to significantly change the business e.g. retire, sell land, etc.")}
+  fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not an option as I plan to significantly change the business e.g. retire, sell land, etc")}
 
 
 ### Export output
 
-write_xlsx(significance, path = "C:/Users/ab000414/Downloads/FOT_significance_Apr24.xlsx")
+write_xlsx(significance, path = "C:/Users/jb000299/Downloads/FOT_significance_Oct24.xlsx")
