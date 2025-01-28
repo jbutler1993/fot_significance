@@ -97,7 +97,7 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   
   # Step 9: Add to the table
   
-  function_df <- data.frame(question = question1, answer = answer1, timeone = time1, timetwo = time2, pvalue = p_value)
+  function_df <- data.frame(question = question1, answer = answer1, timeone = time1, responseone = p1, timetwo = time2, responsetwo = p2, pvalue = p_value)
   
   significance <<- rbind(significance, function_df)
   
