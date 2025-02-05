@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> The last version of the Farmer Opinion Tracker run through the significance process was April 2024.
+> The last version of the Farmer Opinion Tracker run through the significance process was October 2024.
 
 ## Cheat Sheet
 - [ ] Download the latest version of Farmer Opinion Tracker results
