@@ -6,9 +6,9 @@ library(dplyr)
 library(tibble)
 library(data.table)
 
-responses <-  read_excel("C:/Users/jb000299/Downloads/FOT_responses_Oct24.xlsx") # 'responses' excel
+responses <-  read_excel("~/fot_significance/FOT_responses_Apr25.xlsx") # 'responses' excel path
 
-times <- c("April 2024", "October 2023", "April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019") # Needs to be all iterations except the latest
+times <- c("October 2024", "April 2024", "October 2023", "April 2023", "October 2022", "April 2022", "October 2021", "April 2021", "October 2020", "September 2019") # Needs to be all iterations except the latest
 
 ## Creating the table
 significance <- data.frame(
@@ -25,7 +25,7 @@ fot_significance <- function(timeinput1, questioninput, answerinput) {
   
   ### Input the function variables ###
   
-  time1 <- "October 2024" # The latest iteration of the survey
+  time1 <- "April 2025" # The latest iteration of the survey
   time2 <- timeinput1 # The iteration being compared to
   answer1 <- answerinput # The specific answer
   question1 <- questioninput # The specific Survey Question
@@ -525,7 +525,6 @@ for (time in times) {
 for (time in times) {
   fot_significance(time, "Have any of the following issues led to you making the decision not to enroll in or renew agri-environment schemes / agreements for the next year?", "Available schemes are not an option as I plan to significantly change the business e.g. retire, sell land, etc")}
 
-
 ### Export output
 
-write_xlsx(significance, path = "C:/Users/jb000299/Downloads/FOT_significance_Oct24.xlsx")
+write_xlsx(significance, path = "C:/Users/ab000414/Downloads/FOT_significance_Apr25.xlsx") # output path
